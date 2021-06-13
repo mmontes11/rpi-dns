@@ -4,6 +4,8 @@ services:
     image: linuxserver/duckdns:arm32v7-78f79e9f-ls75
     container_name: duckdns
     env_file: .env
+    volumes:
+     - './duckdns:/config'
     restart: unless-stopped
   pihole:
     container_name: pihole
