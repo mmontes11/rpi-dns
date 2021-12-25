@@ -2,3 +2,4 @@
 etc-dnsmasq.d/
 etc-pihole/
 duckdns/
+!etc-pihole/custom.list
