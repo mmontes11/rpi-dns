@@ -1,5 +1,4 @@
 .env
-etc-dnsmasq.d/
-etc-pihole/
-duckdns/
-!etc-pihole/custom.list
+etc-dnsmasq.d/*.conf
+etc-pihole/*
+!etc-dnsmasq.d/02-custom.conf
