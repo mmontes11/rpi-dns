@@ -1,4 +1,2 @@
 .env
-etc-dnsmasq.d/*.conf
 etc-pihole/*
-!etc-dnsmasq.d/02-custom.conf

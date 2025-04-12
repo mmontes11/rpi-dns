@@ -2,9 +2,15 @@ services:
   pihole:
     container_name: pihole
     image: pihole/pihole:2025.03.0
-    network_mode: 'host'
     env_file: .env
     volumes:
       - './etc-pihole/:/etc/pihole/'
       - './etc-dnsmasq.d/:/etc/dnsmasq.d/'
     restart: unless-stopped
+    ports:
+      - "53:53/tcp"
+      - "53:53/udp"
+      - "80:80/tcp"
+    dns:
+      - 8.8.8.8
+      - 8.8.4.4
