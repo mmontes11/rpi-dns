@@ -3,7 +3,6 @@ services:
     container_name: pihole
     image: pihole/pihole:2025.03.0
     network_mode: 'host'
-    privileged: true 
     env_file: .env
     volumes:
       - './etc-pihole/:/etc/pihole/'
